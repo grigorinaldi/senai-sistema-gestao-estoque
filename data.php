@@ -1,0 +1,88 @@
+<?php
+
+$produtos_base = [
+    [
+        'id' => 1,
+        'nome' => 'Cimento Portland 50kg',
+        'quantidade' => 100,
+        'preco' => 35.00,
+        'categoria' => 'Bruto',
+    ],
+    [
+        'id' => 2,
+        'nome' => 'Tijolo Baiano 8 Furos (milheiro)',
+        'quantidade' => 15,
+        'preco' => 950.00,
+        'categoria' => 'Bruto',
+    ],
+    [
+        'id' => 3,
+        'nome' => 'Areia Média (m³)',
+        'quantidade' => 10,
+        'preco' => 120.00,
+        'categoria' => 'Bruto',
+    ],
+    [
+        'id' => 4,
+        'nome' => 'Vergalhão de Aço 10mm (12m)',
+        'quantidade' => 50,
+        'preco' => 68.00,
+        'categoria' => 'Bruto',
+    ],
+    [
+        'id' => 5,
+        'nome' => 'Furadeira de Impacto 600W',
+        'quantidade' => 5,
+        'preco' => 289.00,
+        'categoria' => 'Ferramentas',
+    ],
+    [
+        'id' => 6,
+        'nome' => 'Jogo de Chaves de Fenda (6 peças)',
+        'quantidade' => 12,
+        'preco' => 45.00,
+        'categoria' => 'Ferramentas',
+    ],
+    [
+        'id' => 7,
+        'nome' => 'Trena Métrica Digital 20m',
+        'quantidade' => 8,
+        'preco' => 115.00,
+        'categoria' => 'Ferramentas',
+    ],
+    [
+        'id' => 8,
+        'nome' => 'Martelo de Unha 27mm',
+        'quantidade' => 20,
+        'preco' => 32.00,
+        'categoria' => 'Ferramentas',
+    ],
+    [
+        'id' => 9,
+        'nome' => 'Porcelanato Polido 60x60 (m²)',
+        'quantidade' => 200,
+        'preco' => 85.00,
+        'categoria' => 'Acabamento',
+    ],
+    [
+        'id' => 10,
+        'nome' => 'Tinta Acrílica Branca 18L',
+        'quantidade' => 30,
+        'preco' => 240.00,
+        'categoria' => 'Acabamento',
+    ],
+    [
+        'id' => 11,
+        'nome' => 'Torneira Monocomando Banheiro',
+        'quantidade' => 10,
+        'preco' => 180.00,
+        'categoria' => 'Acabamento',
+    ],
+    [
+        'id' => 12,
+        'nome' => 'Argamassa ACIII 20kg',
+        'quantidade' => 60,
+        'preco' => 42.00,
+        'categoria' => 'Acabamento',
+    ],
+];
