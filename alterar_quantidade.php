@@ -11,8 +11,6 @@ if (isset($_GET["id"]) && isset($_GET["acao"])) {
         } elseif ($acao === "subtrair") {
             if ($_SESSION["produtos"][$id]["quantidade"] > 0) {
                 $_SESSION["produtos"][$id]["quantidade"]--;
-            } else {
-                $_SESSION["mensagem"] = "A quantidade já está em 0.";
             }
         }
     }
