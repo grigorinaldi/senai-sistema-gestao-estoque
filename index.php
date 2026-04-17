@@ -55,7 +55,7 @@ require_once "init.php";
     </main>
 
     <main class="conteiner">
-        <section class="box">
+        <section id="inventario" class="box">
             <h2 class="titulo">Inventário</h2>
 
             <table class="tabela-inventario">

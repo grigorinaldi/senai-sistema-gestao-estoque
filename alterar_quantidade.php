@@ -16,5 +16,5 @@ if (isset($_GET["id"]) && isset($_GET["acao"])) {
     }
 }
 
-header("Location: index.php");
+header("Location: index.php#inventario");
 exit;

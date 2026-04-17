@@ -13,5 +13,5 @@ if (isset($_GET['id'])) {
 }
 
 // Redireciona de volta para o index
-header('Location: index.php');
+header('Location: index.php#inventario');
 exit;
