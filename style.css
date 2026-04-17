@@ -124,6 +124,7 @@ header div{
     border-collapse: collapse;
     margin-top: 20px;
     background-color: #fff;
+    table-layout: fixed;
 }
 
 .tabela-inventario th,
@@ -146,21 +147,42 @@ header div{
     height: 70px;
 }
 
+.acoes-botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.acoes-botoes .excluir {
+    flex-basis: 100%;
+    max-width: 100px;
+}
+
+th:nth-child(6) { 
+    width: 22%;
+}
+
 th:nth-child(1) { width: 20%; } /* Nome */
-th:nth-child(2) { width: 15%; } /* Categoria */
-th:nth-child(3) { width: 0.5%; } /* Quantidade */
-th:nth-child(4) { width: 15%; } /* Preço */
-th:nth-child(5) { width: 17.5%; } /* Total */
-th:nth-child(6) { width: 32%; } /* Ações */
+th:nth-child(2) { width: 16%; } /* Categoria */
+th:nth-child(3) { width: 14%; } /* Quantidade */
+th:nth-child(4) { width: 16%; } /* Preço */
+th:nth-child(5) { width: 16%; } /* Total */
+th:nth-child(6) { width: 18%; } /* Ações */
 
 .btn-acao {
     border: none;
-    padding: 8px 14px;
+    padding: 8px 12px;
     border-radius: 8px;
     cursor: pointer;
     font-size: 0.95rem;
-    margin: 0 4px;
-    margin-bottom: 10px;
+    box-sizing: border-box;
+    min-width: 50px;
+    text-align: center;
+    margin: 0;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .editar {
