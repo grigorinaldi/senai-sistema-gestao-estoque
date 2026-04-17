@@ -124,9 +124,21 @@ require_once "init.php";
             </table>
         </section>
     </main>
+    <?php
+    $totalEstoque = 0;
+
+    if (isset($_SESSION["produtos"]) && !empty( $_SESSION["produtos"])) {
+        foreach ($_SESSION["produtos"] as $produto) {
+            $totalEstoque += $produto["quantidade"] * $produto["preco"];
+        }
+    }
+    ?>
+
     <footer>
         <h1>Valor total do estoque:</h1>
-        <p class="valor-estoque">R$ 494,50</p>
+        <p class="valor-estoque"><!--R$ 494,50-->
+            R$ <?php echo number_format($totalEstoque,2,",","."); ?>
+        </p>
     </footer>
 </body>
 
