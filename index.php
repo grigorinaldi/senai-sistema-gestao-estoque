@@ -81,11 +81,11 @@ require_once "init.php";
                         echo "<td>R$ " . number_format($produto['quantidade'] * $produto['preco'], 2, ',', '.') . "</td>";
                         echo "<td>
                                 <div class='acoes-botoes'>
-                                    <a href='alterar_quantidade.php?id={$index}&acao=subtrair'>
-                                        <button class='btn-acao editar'>-1</button>
-                                    </a>
                                     <a href='alterar_quantidade.php?id={$index}&acao=somar'>
                                         <button class='btn-acao editar'>+1</button>
+                                    </a>
+                                    <a href='alterar_quantidade.php?id={$index}&acao=subtrair'>
+                                        <button class='btn-acao editar'>-1</button>
                                     </a>
                                     <a href='excluir_produto.php?id={$index}'onclick='return confirm(\"Tem certeza que deseja excluir?\")'>
                                         <button class='btn-acao excluir'>Excluir</button>
