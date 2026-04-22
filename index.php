@@ -1,5 +1,7 @@
 <?php
 require_once "init.php";
+
+$limiteBaixo = 5;
 ?>
 
 <!DOCTYPE html>
@@ -72,8 +74,14 @@ require_once "init.php";
                 <tbody>
                     <?php
                     // print_r($_SESSION['produtos']);
-                    foreach ($_SESSION['produtos'] as $index => $produto) {
-                        echo "<tr>";
+                    foreach ($_SESSION['produtos'] as $index => $produto):
+
+                        $classe = '';
+                        if ($produto['quantidade'] <= 5) {
+                            $classe = 'estoque-baixo';
+                        }
+                        
+                        echo "<tr class='$classe'>";
                         echo "<td>{$produto['nome']}</td>";
                         echo "<td>{$produto['categoria']}</td>";
                         echo "<td>{$produto['quantidade']}</td>";
@@ -93,7 +101,7 @@ require_once "init.php";
                                 </div>
                             </td>";
                         echo "</tr>";
-                    }
+                    endforeach;
                     ?>
                     <!-- <tr>
                             <td>Cimento</td>

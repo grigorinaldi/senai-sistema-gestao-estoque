@@ -204,6 +204,12 @@ th:nth-child(6) { width: 18%; } /* Ações */
     font-weight: 500;
 }
 
+.estoque-baixo {
+    background-color: #d18282;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
 footer {
     background-color: #a35d49;
     text-align: center;
