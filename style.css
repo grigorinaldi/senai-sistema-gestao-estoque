@@ -21,7 +21,7 @@ header {
     flex-direction: wrap;
     justify-content: center;
     min-width: 100%;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
     position: relative;
 }
@@ -32,7 +32,21 @@ img {
     user-select: none;
 }
 
-header div{
+header a {
+    position: absolute;
+    left: -5px;
+    top: -12px;
+    z-index: 20;
+    opacity: 0;
+    cursor: pointer;
+}
+
+header a img {
+    width: 180px;
+    height: 125px;
+}
+
+header div {
     color: #000000;
     position: absolute;
     text-align: center;
@@ -161,16 +175,40 @@ header div{
     max-width: 100px;
 }
 
-th:nth-child(6) { 
+th:nth-child(6) {
     width: 22%;
 }
 
-th:nth-child(1) { width: 20%; } /* Nome */
-th:nth-child(2) { width: 16%; } /* Categoria */
-th:nth-child(3) { width: 14%; } /* Quantidade */
-th:nth-child(4) { width: 16%; } /* Preço */
-th:nth-child(5) { width: 16%; } /* Total */
-th:nth-child(6) { width: 18%; } /* Ações */
+th:nth-child(1) {
+    width: 20%;
+}
+
+/* Nome */
+th:nth-child(2) {
+    width: 16%;
+}
+
+/* Categoria */
+th:nth-child(3) {
+    width: 14%;
+}
+
+/* Quantidade */
+th:nth-child(4) {
+    width: 16%;
+}
+
+/* Preço */
+th:nth-child(5) {
+    width: 16%;
+}
+
+/* Total */
+th:nth-child(6) {
+    width: 18%;
+}
+
+/* Ações */
 
 .btn-acao {
     border: none;

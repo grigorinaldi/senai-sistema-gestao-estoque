@@ -16,6 +16,7 @@ $limiteBaixo = 5;
 
 <body>
     <header>
+        <a href="index.php"><img src="https://images.cws.digital/produtos/gg/73/36/mdf-branco-tx-25mm-2-faces-6573673-1638891956511.jpg"></a>
         <img src="./Imagens/logoconstrutech.png" alt="Logo da ConstruTech" class="logo" style="width: 180px;">
         <div>
             <h1>Sistema de Gestão de Estoque</h1>
